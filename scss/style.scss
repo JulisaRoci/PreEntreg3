@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700;900&display=swap');
+@import url(../scss/mixin.scss);
+
+$primary-color: #ffd803;
+$hover-color: #272343;
+$fondo:#e3f6f5;
+
+body, section {
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  max-width: 1200px;
+  margin: auto;
+}
+
+.navbar {
+  background-color: $fondo;
+}
+
+form .btn, .card .btn {
+  
+  color: #272343; 
+}
+
+/* SUSCRIBETE */
+
+#suscripcion {
+  background-color: $fondo;
+}
+ 
+form {
+  font-family: 'Poppins', sans-serif;
+}
+  
+input {
+  width: 100%;
+  outline: none;
+}
+
+::placeholder {
+  color: #272343;
+}
+
+.btn-custom {
+  width:80%;
+  
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+// FOOTER
+a{
+  text-decoration: none;
+  color: black;
+}
+
+// ---------exp
+#destinos{
+
+  main{
+    margin: 0 30px;
+
+    .container-dstn{
+            
+      display: flex;
+      justify-content: space-between;
+
+      align-items: center;
+
+      img{
+        border-radius: 8px;
+      }
+
+      @media screen and (max-width:576px){
+        flex-direction: column;
+
+      }
+
+      @media screen and (max-width:768px){
+        flex-direction: column;
+      }
+
+    }
+
+    @media screen and (max-width:768px){
+      
+      button{
+        margin-top: 30px;
+      }
+    }
+    @media screen and (max-width:992px){
+      img{
+        width: 100%;
+      }
+    }
+
+    
+
+  }
+}
+
+
+
+
+
+
+// ---------dest
+#destinos{
+  margin: 30px;
+
+  h2{
+    text-align: center;
+    margin: 50px 0;
+  }
+
+  .container-destinos{
+    display: flex;
+    justify-content: space-between;
+
+    img{
+      width: 300px;
+    }
+    
+    .cards-dstn{
+      // background-color: #ffd9033b;
+      width: 300px;
+
+      display: flex;
+      flex-direction: column;
+
+      align-items: center;
+
+      h3{
+        margin: 8px 0;
+      }
+    }
+
+    @media screen and (max-width:992px){
+      img{
+        width: 100%;
+      }
+
+      .cards-dstn{
+        width: 250px;
+        gap: 10px;
+      }
+
+      .cardsBoton{
+        width: 250px;
+      }
+      
+    }
+
+    @media screen and (max-width:768px){
+      img{
+        width: 100%;
+      }
+
+      .cards-dstn{
+        width: 200px;
+        margin: 0 10px;
+      }
+
+      .cardsBoton{
+        width: 150px;
+      }
+      
+    }
+
+    @media screen and (max-width:576px){
+
+      flex-wrap: wrap;
+
+      .cards-dstn{
+        width: 100%;
+        margin: 20px 0;
+      }
+    }
+
+  }
+
+}
